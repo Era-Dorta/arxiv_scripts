@@ -12,7 +12,7 @@ For a folder directory like
   
   Run the script as
   
-  `python ./remove_unused_imgs.py --main_folder ./ --fig_folders ./figs --img_folders ./imgs`
+  `./remove_unused_imgs --main_folder ./paper --fig_folders ./paper/figs --img_folders ./paper/imgs`
   
   If `a.tex` only uses `a.png`, the remaining image, `b.png`, will be removed.
   
