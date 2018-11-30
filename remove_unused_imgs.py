@@ -1,7 +1,10 @@
+#!/usr/bin/env python3
+# PYTHON_ARGCOMPLETE_OK
 import glob
 import os
 import re
 import argparse
+import argcomplete
 
 
 def main(args):
@@ -159,6 +162,7 @@ if __name__ == "__main__":
                         help="""If set assumes that \\graphicspath was used to include files in
                               img_folders subfolders of main_folder. For this to work all folders
                               added in img_folders must be added to the \\graphicspath""")
+    argcomplete.autocomplete(parser)
     args = parser.parse_args()
 
     if args.main_folder is None:
